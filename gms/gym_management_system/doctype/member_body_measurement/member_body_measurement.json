@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-20 15:05:38.672260",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "assigned_to",
+  "column_break_qudb",
+  "member_name",
+  "trainer_name",
+  "section_break_75ei",
+  "first_measurement_date",
+  "latest_measurement_date",
+  "section_break_mvtq",
+  "bmi"
+ ],
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Gym Member"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "Gym Trainer"
+  },
+  {
+   "fieldname": "section_break_75ei",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "first_measurement_date",
+   "fieldtype": "Date",
+   "label": "First Measurement Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "latest_measurement_date",
+   "fieldtype": "Date",
+   "label": "Latest Measurement Date"
+  },
+  {
+   "fieldname": "section_break_mvtq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bmi",
+   "fieldtype": "Table",
+   "label": "BMI",
+   "options": "BMI Details"
+  },
+  {
+   "fieldname": "column_break_qudb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "member.full_name",
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name"
+  },
+  {
+   "fetch_from": "assigned_to.last_name",
+   "fieldname": "trainer_name",
+   "fieldtype": "Data",
+   "label": "Trainer Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-21 10:47:17.793192",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Member Body Measurement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

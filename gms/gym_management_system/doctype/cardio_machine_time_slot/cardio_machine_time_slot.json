@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{m_name}-{###}",
+ "creation": "2023-04-21 15:42:19.777879",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "m_name",
+  "installed_date",
+  "next_date",
+  "section_break_bb23",
+  "time_slot"
+ ],
+ "fields": [
+  {
+   "fieldname": "m_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Machine Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "installed_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Installed Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "next_date",
+   "fieldtype": "Date",
+   "label": "Next Maintenance Date"
+  },
+  {
+   "fieldname": "section_break_bb23",
+   "fieldtype": "Section Break",
+   "label": "Timings"
+  },
+  {
+   "fieldname": "time_slot",
+   "fieldtype": "Table",
+   "label": "Time Slot",
+   "options": "Time Slot"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-21 15:49:04.268036",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Cardio Machine Time Slot",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

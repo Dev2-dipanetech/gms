@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{plan_name} {monthly_cost}",
+ "creation": "2023-04-19 17:06:24.006156",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plan_name",
+  "monthly_cost",
+  "annual_cost",
+  "features_allowed"
+ ],
+ "fields": [
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "label": "Plan Name"
+  },
+  {
+   "fieldname": "monthly_cost",
+   "fieldtype": "Currency",
+   "label": "Monthly Cost"
+  },
+  {
+   "fieldname": "annual_cost",
+   "fieldtype": "Currency",
+   "label": "Annual Cost"
+  },
+  {
+   "fieldname": "features_allowed",
+   "fieldtype": "Table MultiSelect",
+   "label": "Features Allowed",
+   "options": "Feature"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-20 10:43:56.831981",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Membership",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

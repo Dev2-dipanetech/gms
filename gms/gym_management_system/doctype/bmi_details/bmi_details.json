@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-20 15:04:45.293965",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "height",
+  "weight",
+  "bmi",
+  "weight_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Height (in m)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "bmi",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "BMI",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "weight_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Weight Status",
+   "options": "\nUnderweight\nHealthy\nOverweight\nObese",
+   "read_only": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight( in Kgs)",
+   "non_negative": 1,
+   "precision": "1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-20 17:38:17.997735",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "BMI Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

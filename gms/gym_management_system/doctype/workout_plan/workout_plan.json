@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:WP{####}",
+ "creation": "2023-04-21 14:55:40.298203",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "level",
+  "duration",
+  "member",
+  "member_name",
+  "column_break_dqzx",
+  "status",
+  "start_date",
+  "end_date",
+  "section_break_tukr",
+  "workouts"
+ ],
+ "fields": [
+  {
+   "fieldname": "level",
+   "fieldtype": "Select",
+   "label": "Workout Level",
+   "options": "\nBeginner\nIntermediate\nExpert"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Int",
+   "label": "Duration (Weeks)"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Gym Member"
+  },
+  {
+   "fetch_from": "member.full_name",
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name",
+   "options": "Name"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nExpired"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "section_break_tukr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "workouts",
+   "fieldtype": "Table",
+   "label": "Workouts",
+   "options": "Workout"
+  },
+  {
+   "fieldname": "column_break_dqzx",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-21 15:00:06.015230",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Workout Plan",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
