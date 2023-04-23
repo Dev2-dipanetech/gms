@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: GCA-{####}",
+ "creation": "2023-04-23 11:00:11.455976",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "incharge",
+  "column_break_fl1k",
+  "class",
+  "name1",
+  "attendance_section",
+  "attendance_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Class",
+   "options": "Gym Group Class",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "class.incharge",
+   "fieldname": "incharge",
+   "fieldtype": "Link",
+   "label": "Incharge",
+   "options": "Gym Trainer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "attendance_section",
+   "fieldtype": "Section Break",
+   "label": "Attendance"
+  },
+  {
+   "fieldname": "attendance_details",
+   "fieldtype": "Table",
+   "label": "Attendance Details",
+   "options": "Attendance Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fl1k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "incharge.full_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-23 11:20:16.084497",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Class Attendance",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
