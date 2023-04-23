@@ -25,9 +25,13 @@
   "locker_taken",
   "trainer_plan",
   "column_break_k8au",
+  "workout_plan_assigned",
   "locker_no",
   "section_break_9omk",
-  "trainer"
+  "trainer",
+  "mem_grp_class",
+  "column_break_dzhy",
+  "membership_subscription"
  ],
  "fields": [
   {
@@ -142,11 +146,40 @@
    "fieldtype": "Table",
    "label": "Trainer",
    "options": "Gym Trainer and Rating"
+  },
+  {
+   "fieldname": "workout_plan_assigned",
+   "fieldtype": "Link",
+   "label": "Workout Plan Assigned",
+   "options": "Workout Plan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mem_grp_class",
+   "fieldtype": "Table MultiSelect",
+   "label": "Group Classes Taken",
+   "options": "Member-Group Class"
+  },
+  {
+   "fieldname": "column_break_dzhy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "membership_subscription",
+   "fieldtype": "Link",
+   "label": "Membership Subscription",
+   "options": "Gym Membership",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-04-21 13:00:23.385432",
+ "links": [
+  {
+   "link_doctype": "Member Body Measurement",
+   "link_fieldname": "member"
+  }
+ ],
+ "modified": "2023-04-23 13:02:58.234562",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Member",

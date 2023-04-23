@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{class_name}",
  "creation": "2023-04-21 15:15:59.961326",
  "default_view": "List",
  "doctype": "DocType",
@@ -11,6 +12,7 @@
   "frequency",
   "column_break_wtpe",
   "incharge",
+  "pricemonthly",
   "timing_section",
   "from",
   "column_break_tlvc",
@@ -56,14 +58,20 @@
    "fieldname": "to",
    "fieldtype": "Time",
    "label": "To"
+  },
+  {
+   "fieldname": "pricemonthly",
+   "fieldtype": "Currency",
+   "label": "Price(monthly)"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-21 15:22:04.557979",
+ "modified": "2023-04-23 11:31:31.332367",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Group Class",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
