@@ -3,9 +3,16 @@
 
 import frappe
 from frappe.tests.utils import FrappeTestCase
-
+import unnitest
 
 class TestGymLocker(FrappeTestCase):
+    pass
+    # def test_gym_locker(self):
+    #  test_locker = frappe.get_doc({
+    #      "doctype": "Gym Locker",
+    #      "assigned_to": "GM-0008"		 
+	#  }).insert()
+class TestGymLocker(unnitest.TestCase):
     def test_gym_locker(self):
      test_locker = frappe.get_doc({
          "doctype": "Gym Locker",

@@ -16,7 +16,8 @@
   "start_date",
   "end_date",
   "section_break_tukr",
-  "workouts"
+  "workouts",
+  "image"
  ],
  "fields": [
   {
@@ -78,11 +79,17 @@
   {
    "fieldname": "column_break_m2d0",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
   }
  ],
+ "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-26 16:29:19.573677",
+ "modified": "2023-04-28 18:36:54.648590",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Workout Plan",
