@@ -21,6 +21,7 @@
   "column_break_1k6u",
   "address",
   "l4d",
+  "gym_related_tab",
   "members_assigned_section",
   "members"
  ],
@@ -110,11 +111,16 @@
    "fieldtype": "Date",
    "label": "Date of Birth",
    "reqd": 1
+  },
+  {
+   "fieldname": "gym_related_tab",
+   "fieldtype": "Tab Break",
+   "label": "Gym Related"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-21 11:11:21.018528",
+ "modified": "2023-04-26 14:50:23.469413",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Trainer",

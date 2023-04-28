@@ -8,16 +8,14 @@ from frappe.utils import now
 
 class MemberBodyMeasurement(Document):
     def before_save(self):
-        if not self.first_measurement_date:
-            self.first_measurement_date = now()
-        
-        for s in self.get('bmi'):
-            s.bmi = (s.weight)/((s.height)**2)
-            if s.bmi <=18.5:
-                s.weight_status = 'Underweight'
-            if (s.bmi >18.5) and (s.bmi <=24.9):
-                s.weight_status = 'Healthy'
-            if (s.bmi >24.9) and (s.bmi <=29.9):
-                s.weight_status = 'Overweight'
-            if (s.bmi >30):
-                s.weight_status = 'Obese'
+        self.bmi = (self.weight)/((self.height)**2)
+        self.height_in_foot = 3.28084 * self.height
+        self.weight_in_pounds = 2.20462 * self.weight
+        if self.bmi <=18.5:
+            self.weight_status = 'Underweight'
+        if (self.bmi >18.5) and (self.bmi <=24.9):
+            self.weight_status = 'Healthy'
+        if (self.bmi >24.9) and (self.bmi <=29.9):
+            self.weight_status = 'Overweight'
+        if (self.bmi >30):
+            self.weight_status = 'Obese'

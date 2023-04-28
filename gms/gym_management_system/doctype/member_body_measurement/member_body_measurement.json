@@ -7,16 +7,30 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "posting_date",
+  "section_break_i3hd",
   "member",
   "assigned_to",
   "column_break_qudb",
   "member_name",
   "trainer_name",
   "section_break_75ei",
-  "first_measurement_date",
-  "latest_measurement_date",
-  "section_break_mvtq",
-  "bmi"
+  "height",
+  "weight",
+  "bmi",
+  "weight_status",
+  "column_break_2kp0",
+  "height_in_foot",
+  "weight_in_pounds",
+  "caloriesin_kcal",
+  "amended_from",
+  "body_measurement_section",
+  "chest",
+  "waist",
+  "thigh",
+  "column_break_zwhk",
+  "upper_arm",
+  "hips"
  ],
  "fields": [
   {
@@ -36,25 +50,10 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "first_measurement_date",
-   "fieldtype": "Date",
-   "label": "First Measurement Date",
-   "read_only": 1
-  },
-  {
-   "fieldname": "latest_measurement_date",
-   "fieldtype": "Date",
-   "label": "Latest Measurement Date"
-  },
-  {
-   "fieldname": "section_break_mvtq",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "bmi",
-   "fieldtype": "Table",
+   "fieldtype": "Float",
    "label": "BMI",
-   "options": "BMI Details"
+   "precision": "2"
   },
   {
    "fieldname": "column_break_qudb",
@@ -64,18 +63,124 @@
    "fetch_from": "member.full_name",
    "fieldname": "member_name",
    "fieldtype": "Data",
-   "label": "Member Name"
+   "label": "Member Name",
+   "read_only": 1
   },
   {
    "fetch_from": "assigned_to.last_name",
    "fieldname": "trainer_name",
    "fieldtype": "Data",
-   "label": "Trainer Name"
+   "label": "Trainer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Height(in m)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "caloriesin_kcal",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Calories(in kcal)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2kp0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "height_in_foot",
+   "fieldtype": "Float",
+   "label": "Height (in feet)",
+   "precision": "1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "weight_in_pounds",
+   "fieldtype": "Float",
+   "label": "Weight (in pounds)",
+   "precision": "1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_i3hd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Member Body Measurement",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "weight_status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight (in kg)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "body_measurement_section",
+   "fieldtype": "Section Break",
+   "label": "Body Measurement (in cm)"
+  },
+  {
+   "fieldname": "chest",
+   "fieldtype": "Float",
+   "label": "Chest (in cm)",
+   "precision": "1"
+  },
+  {
+   "fieldname": "upper_arm",
+   "fieldtype": "Float",
+   "label": "Upper Arm (in cm)",
+   "precision": "1"
+  },
+  {
+   "fieldname": "waist",
+   "fieldtype": "Float",
+   "label": "Waist (in cm)",
+   "precision": "1"
+  },
+  {
+   "fieldname": "hips",
+   "fieldtype": "Float",
+   "label": "Hips (in cm)",
+   "precision": "1"
+  },
+  {
+   "fieldname": "thigh",
+   "fieldtype": "Float",
+   "label": "Thigh (in cm)",
+   "precision": "1"
+  },
+  {
+   "fieldname": "column_break_zwhk",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-04-21 10:47:17.793192",
+ "modified": "2023-04-26 15:54:24.071018",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Member Body Measurement",
@@ -91,6 +196,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

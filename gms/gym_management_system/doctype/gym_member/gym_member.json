@@ -21,17 +21,18 @@
   "status",
   "column_break_1k6u",
   "address",
+  "photo",
   "gym_related_tab",
   "locker_taken",
   "trainer_plan",
+  "membership_subscription",
   "column_break_k8au",
   "workout_plan_assigned",
   "locker_no",
   "section_break_9omk",
   "trainer",
   "mem_grp_class",
-  "column_break_dzhy",
-  "membership_subscription"
+  "route"
  ],
  "fields": [
   {
@@ -161,25 +162,45 @@
    "options": "Member-Group Class"
   },
   {
-   "fieldname": "column_break_dzhy",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "membership_subscription",
    "fieldtype": "Link",
    "label": "Membership Subscription",
    "options": "Gym Membership",
    "reqd": 1
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
   }
  ],
+ "has_web_view": 1,
+ "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [
   {
+   "group": "Measurement",
    "link_doctype": "Member Body Measurement",
    "link_fieldname": "member"
+  },
+  {
+   "group": "Locker",
+   "link_doctype": "Gym Locker",
+   "link_fieldname": "assigned_to"
+  },
+  {
+   "group": "Invoice",
+   "link_doctype": "Gym Subscription Invoice",
+   "link_fieldname": "customer"
   }
  ],
- "modified": "2023-04-23 13:02:58.234562",
+ "max_attachments": 1,
+ "modified": "2023-04-27 19:55:26.634627",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Member",
@@ -200,6 +221,7 @@
   }
  ],
  "quick_entry": 1,
+ "route": "member",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

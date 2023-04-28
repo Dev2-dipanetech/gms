@@ -10,7 +10,10 @@
  "field_order": [
   "locker_no",
   "volume",
-  "assigned_to"
+  "monthly_cost",
+  "column_break_glgq",
+  "assigned_to",
+  "annual_cost"
  ],
  "fields": [
   {
@@ -18,7 +21,6 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Locker Number",
-   "reqd": 1,
    "unique": 1
   },
   {
@@ -32,11 +34,25 @@
    "fieldtype": "Select",
    "label": "Volume",
    "options": "\nSmall\nMedium\nLarge"
+  },
+  {
+   "fieldname": "column_break_glgq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "monthly_cost",
+   "fieldtype": "Currency",
+   "label": "Monthly Charges"
+  },
+  {
+   "fieldname": "annual_cost",
+   "fieldtype": "Currency",
+   "label": "Annual Charges"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-21 11:53:30.123851",
+ "modified": "2023-04-28 16:48:17.303323",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Locker",

@@ -7,7 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "gym_member",
-  "excercise"
+  "workout"
  ],
  "fields": [
   {
@@ -18,16 +18,17 @@
    "options": "Gym Member"
   },
   {
-   "fieldname": "excercise",
-   "fieldtype": "Data",
+   "fieldname": "workout",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Excercise"
+   "label": "Workout Plan Assigned",
+   "options": "Workout Plan"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-04-19 16:54:48.694781",
+ "modified": "2023-04-26 14:53:49.486890",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Member Book",

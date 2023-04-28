@@ -6,4 +6,11 @@ from frappe.model.document import Document
 
 
 class GymClassAttendance(Document):
-	pass
+    def before_save(self):
+        if self.get('attendance_details'):
+            row = 0
+            sum = 0
+            for d in self.get('attendance_details'):
+                sum += d.rating
+                row += 1
+            self.average_rating = sum/row
