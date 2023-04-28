@@ -1,0 +1,30 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title }}</h1>
+{% set image_alt = "{} Image".format(plan_name)%}
+<img class = "img-fluid img-thumbnail " src = "{{image}}" alt ="{{plan_name}}" title = "{{plan_name}}">
+
+<div class = "text-center mt-5">
+    <td> Monthly Price: <b>{{monthly_cost}}</b><td>
+    <td> <br>Annual Price: <b>{{annual_cost}}</b><td>
+        <table>
+            <thead>
+              <tr>
+                <th><b>FEATURES :</b></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for row in doc.features_allowed %}
+              
+                <td><font size ="5">{{ row.amenities }} ,</font></td>
+                
+              
+              {% endfor %}
+            </tbody>
+          </table>
+          
+    
+{% endblock %}
+
+<!-- this is a sample default web page template -->

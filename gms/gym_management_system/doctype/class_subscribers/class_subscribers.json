@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-28 13:52:44.024386",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gym_id",
+  "name1"
+ ],
+ "fields": [
+  {
+   "fieldname": "gym_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gym ID",
+   "options": "Gym Member",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "gym_id.full_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "options": "Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-28 13:53:09.580102",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Class Subscribers",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

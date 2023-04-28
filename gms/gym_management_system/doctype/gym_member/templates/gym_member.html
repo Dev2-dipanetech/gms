@@ -1,0 +1,38 @@
+<div>
+        
+    {%set image_alt ="{} Image".format(full_name) %}
+
+    
+    <img class="card-img" src = "{{photo}}" alt="{{full_name}}" title="{{full_name}}">
+    <h1>{{ doc.full_name }}</h1>
+    <h><font size = "2"><b> Workout Assigned:</b> {{workout_plan_assigned}}</font><h>
+    <br>
+    <table> 
+        <thead>
+            <tr>
+                <th><b>Group Class Taken:</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for mem in doc.mem_grp_class%}
+            <td><font size = "2">{{mem.gym_class}} </font></td>
+
+            {% endfor%}
+        </tbody>
+        <br>
+        <thead>
+            <tr>
+                <th><b>Trainer:</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for tr in doc.trainer%}
+            <tr>
+                <td><font size = "2"> <b>Name:</b> {{tr.trainer_name}} </font></td>
+                <td><font size = "2"> <b>Contact No.:</b> {{tr.contact}} </font></td>
+            </tr>
+
+            {% endfor%}
+
+    </table>
+</div>

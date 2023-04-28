@@ -12,11 +12,16 @@
   "frequency",
   "column_break_wtpe",
   "incharge",
-  "pricemonthly",
+  "section_break_d5u6",
+  "monthly_cost",
+  "column_break_ygry",
+  "annual_cost",
   "timing_section",
   "from",
   "column_break_tlvc",
-  "to"
+  "to",
+  "section_break_ywol",
+  "class_subscribers"
  ],
  "fields": [
   {
@@ -60,14 +65,37 @@
    "label": "To"
   },
   {
-   "fieldname": "pricemonthly",
+   "fieldname": "annual_cost",
    "fieldtype": "Currency",
-   "label": "Price(monthly)"
+   "label": "Annual Charges"
+  },
+  {
+   "fieldname": "monthly_cost",
+   "fieldtype": "Currency",
+   "label": "Monthly Charges"
+  },
+  {
+   "fieldname": "section_break_d5u6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ygry",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ywol",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "class_subscribers",
+   "fieldtype": "Table",
+   "label": "Class Subscribers",
+   "options": "Class Subscribers"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-23 11:31:31.332367",
+ "modified": "2023-04-28 13:53:36.777605",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Group Class",

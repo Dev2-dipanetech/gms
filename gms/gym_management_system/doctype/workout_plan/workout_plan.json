@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:WP{####}",
+ "autoname": "format:{level}",
  "creation": "2023-04-21 14:55:40.298203",
  "default_view": "List",
  "doctype": "DocType",
@@ -9,11 +9,10 @@
  "engine": "InnoDB",
  "field_order": [
   "level",
+  "column_break_m2d0",
   "duration",
   "member",
   "member_name",
-  "column_break_dqzx",
-  "status",
   "start_date",
   "end_date",
   "section_break_tukr",
@@ -34,31 +33,37 @@
   {
    "fieldname": "member",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Member",
-   "options": "Gym Member"
+   "options": "Gym Member",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fetch_from": "member.full_name",
    "fieldname": "member_name",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Member Name",
-   "options": "Name"
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Active\nExpired"
+   "options": "Name",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "start_date",
    "fieldtype": "Date",
-   "label": "Start Date"
+   "hidden": 1,
+   "label": "Start Date",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "end_date",
    "fieldtype": "Date",
-   "label": "End Date"
+   "hidden": 1,
+   "label": "End Date",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "section_break_tukr",
@@ -71,13 +76,13 @@
    "options": "Workout"
   },
   {
-   "fieldname": "column_break_dqzx",
+   "fieldname": "column_break_m2d0",
    "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-21 15:00:06.015230",
+ "modified": "2023-04-26 16:29:19.573677",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Workout Plan",

@@ -1,0 +1,17 @@
+<!-- <div>
+	<a href="{{ doc.route }}">{{ doc.title or doc.name }}</a>
+</div>
+this is a sample default list template -->
+
+<div>
+	<div class = "card" style = "width:18rem;">
+		<img class= "card-img-top" src="{{doc.image}}" alt="{{doc.plan_name}}">
+
+		<div class = "card-body">
+			<h5 class = "card-title">{{doc.plan_name}}</h5>
+			<p class = "card-text"> Monthly Price: {{doc.monthly_cost}}</p>
+			<a href = "/{{doc.route}}" class = "btn btn-primary"> More Details</a>
+		</div>
+		  
+	</card>
+</div>

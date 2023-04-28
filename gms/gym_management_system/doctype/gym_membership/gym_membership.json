@@ -11,7 +11,9 @@
   "plan_name",
   "monthly_cost",
   "annual_cost",
-  "features_allowed"
+  "features_allowed",
+  "image",
+  "route"
  ],
  "fields": [
   {
@@ -34,11 +36,22 @@
    "fieldtype": "Table MultiSelect",
    "label": "Features Allowed",
    "options": "Feature"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-20 10:43:56.831981",
+ "modified": "2023-04-27 17:46:44.904128",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Membership",
@@ -58,6 +71,7 @@
    "write": 1
   }
  ],
+ "route": "membership_plan",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

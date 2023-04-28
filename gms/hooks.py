@@ -199,3 +199,8 @@ app_license = "MIT"
 # auth_hooks = [
 #	"gms.auth.validate"
 # ]
+# import frappe
+# def override_404_page():
+#     return frappe.render_template("my404page.html")
+
+# frappe.utils.response.report_error = override_404_page()
