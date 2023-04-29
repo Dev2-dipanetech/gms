@@ -17,7 +17,8 @@
   "end_date",
   "section_break_tukr",
   "workouts",
-  "image"
+  "image",
+  "route"
  ],
  "fields": [
   {
@@ -84,12 +85,18 @@
    "fieldname": "image",
    "fieldtype": "Attach Image",
    "label": "Image"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
+ "has_web_view": 1,
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-28 18:36:54.648590",
+ "modified": "2023-04-28 18:44:06.956690",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Workout Plan",
@@ -109,6 +116,7 @@
    "write": 1
   }
  ],
+ "route": "workout_plans",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

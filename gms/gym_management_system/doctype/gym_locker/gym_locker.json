@@ -58,7 +58,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-28 18:18:50.880482",
+ "modified": "2023-04-29 13:37:38.824468",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Locker",
@@ -74,6 +74,7 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }

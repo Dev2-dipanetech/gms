@@ -201,6 +201,23 @@ app_license = "MIT"
 # ]
 # import frappe
 # def override_404_page():
-#     return frappe.render_template("my404page.html")
+#     return ("\n\n\n  TEST \n\n\n")
 
 # frappe.utils.response.report_error = override_404_page()
+
+# from frappe import _
+
+# def get_context(context):
+#     context.update({
+#         "title": _("Page Not Found"),
+#         "no_cache": 1
+#     })
+
+#     frappe.local.response['http_status_code'] = 404
+
+#     return context
+
+# website_route_rules = [
+# 	{"from_route": "/404", "to_route": "404"}
+# ]
+

@@ -1,0 +1,28 @@
+<div>
+        
+    {%set image_alt ="{} Image".format(name) %}
+
+    
+    <img class="card-img" src = "{{image}}" alt="{{name}}" title="{{name}}">
+    <h1>{{ doc.name }}</h1>
+    <h><font size = "3"><b> Course Duration:</b> {{duration}}</font><h>
+    <br>
+    <table>
+        <thead>
+          <tr>
+            <th><font size = "2.5"> Workout Configuration</th>
+            <th>Gym Equipment</th>
+            <th>Sets</font></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in doc.workouts %}
+          <tr>
+            <td><font size ="1.5"><b>{{ row.workout }}</b></font></td>
+            <td><font size ="1.5"><b>{{ row.gym_equipment }}</b></font></td>
+            <td><font size ="1.5"><b>{{ row.sets }}</b></font></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      
