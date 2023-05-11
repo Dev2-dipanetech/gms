@@ -3,9 +3,7 @@
 
 # import frappe
 from frappe.website.website_generator import WebsiteGenerator
-from frappe.website.website_generator import Document
 
-class GymMembership(Document):
-	pass
+
 class GymMembership(WebsiteGenerator):
 	pass
